@@ -1,9 +1,14 @@
 #include "Camera.h"
+#include <fmt/format.h>
+#include <fmt/color.h>
 #include <cstdio>
 #include <iostream>
 #include <opencv2/core.hpp>
 #include <opencv2/core/operations.hpp>
 #include <string>
+#include <unistd.h>
+#include <limits.h>
+
 
 using namespace cv;
 using namespace std;
@@ -20,6 +25,12 @@ namespace HDURM
     void HKcam::SetParam()
     {
         // Get the setParam file 绝对路径
+        char cwd[PATH_MAX];
+        if (getcwd(cwd, sizeof(cwd)) == nullptr) {
+            fmt::print(fmt::fg(fmt::color::red), "fail to getcwd(Hkcam-SetParam)\n");
+            return;
+        }
+        string path = cwd + string("/HKCamera/XML/CameraParam.xml");
         FileStorage CameraParam("/home/chengxi/hdjt2024_rm/HKCamera/XML/CameraParam.xml", FileStorage::READ);
         if (!CameraParam.isOpened())
         {
