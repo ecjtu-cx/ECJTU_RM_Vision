@@ -22,11 +22,13 @@ include_directories(
     ./
     ./HKCamera/include
     ./ArmorDetecor/include
+    ./SerialPort/include
 )
 
 file(GLOB_RECURSE source
     ./HKCamera/src/*.*
     ./ArmorDetecor/src/*.*
+    ./SerialPort/src/*.*
 )
 
 add_executable(ECJTU_RM_Vision ./main.cpp ${source})

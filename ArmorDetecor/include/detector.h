@@ -10,6 +10,7 @@
 #include <cmath>
 
 #include "armor.h"
+#include "serialport.h"
 
 namespace rm_auto_aim {
 class Detector {
@@ -56,8 +57,8 @@ public:
   // AngleSolver solver;
 
   /*-------------函数区-----------------------*/
-  // TODO: 增加总识别函数
-  // void run(cv::Mat &img, int color_label, VisionSendData &data);
+  // 总识别函数
+  void run(cv::Mat &img, int color_label, VisionSendData &data);
   // 根据ROI区域识别
   void ImageByROI(cv::Mat &img);
   // 识别函数

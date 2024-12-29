@@ -177,6 +177,30 @@ HKCamera/src/Camera.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/HKCamera/src/Camera.cpp.s
 .PHONY : HKCamera/src/Camera.cpp.s
 
+SerialPort/src/serialport.o: SerialPort/src/serialport.cpp.o
+.PHONY : SerialPort/src/serialport.o
+
+# target to build an object file
+SerialPort/src/serialport.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/SerialPort/src/serialport.cpp.o
+.PHONY : SerialPort/src/serialport.cpp.o
+
+SerialPort/src/serialport.i: SerialPort/src/serialport.cpp.i
+.PHONY : SerialPort/src/serialport.i
+
+# target to preprocess a source file
+SerialPort/src/serialport.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/SerialPort/src/serialport.cpp.i
+.PHONY : SerialPort/src/serialport.cpp.i
+
+SerialPort/src/serialport.s: SerialPort/src/serialport.cpp.s
+.PHONY : SerialPort/src/serialport.s
+
+# target to generate assembly for a file
+SerialPort/src/serialport.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/SerialPort/src/serialport.cpp.s
+.PHONY : SerialPort/src/serialport.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -216,6 +240,9 @@ help:
 	@echo "... HKCamera/src/Camera.o"
 	@echo "... HKCamera/src/Camera.i"
 	@echo "... HKCamera/src/Camera.s"
+	@echo "... SerialPort/src/serialport.o"
+	@echo "... SerialPort/src/serialport.i"
+	@echo "... SerialPort/src/serialport.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

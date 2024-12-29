@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ECJTU_RM_Vision.dir/ArmorDetecor/src/detector.cpp.o.d"
   "CMakeFiles/ECJTU_RM_Vision.dir/HKCamera/src/Camera.cpp.o"
   "CMakeFiles/ECJTU_RM_Vision.dir/HKCamera/src/Camera.cpp.o.d"
+  "CMakeFiles/ECJTU_RM_Vision.dir/SerialPort/src/serialport.cpp.o"
+  "CMakeFiles/ECJTU_RM_Vision.dir/SerialPort/src/serialport.cpp.o.d"
   "CMakeFiles/ECJTU_RM_Vision.dir/main.cpp.o"
   "CMakeFiles/ECJTU_RM_Vision.dir/main.cpp.o.d"
 )

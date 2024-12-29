@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++
 CXX_DEFINES = -DFMT_LOCALE -DFMT_SHARED
 
-CXX_INCLUDES = -I/usr/include/eigen3 -I/home/chengxi/SrcCode/ECJTU_RM_Vision/build -I/home/chengxi/SrcCode/ECJTU_RM_Vision -I/home/chengxi/SrcCode/ECJTU_RM_Vision/. -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./HKCamera/include -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./ArmorDetecor/include -isystem /usr/local/include/opencv4
+CXX_INCLUDES = -I/usr/include/eigen3 -I/home/chengxi/SrcCode/ECJTU_RM_Vision/build -I/home/chengxi/SrcCode/ECJTU_RM_Vision -I/home/chengxi/SrcCode/ECJTU_RM_Vision/. -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./HKCamera/include -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./ArmorDetecor/include -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./SerialPort/include -isystem /usr/local/include/opencv4
 
 CXX_FLAGS = -g
 

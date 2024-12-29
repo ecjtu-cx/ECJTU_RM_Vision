@@ -42,8 +42,33 @@ Detector::Detector(const std::string &config_file_path) {
   //       单位mm
 }
 
-// TODO: 增加总识别函数run
-// void Detector::run(Mat &img, int color_label, VisionSendData &data){}
+// 总识别函数
+void Detector::run(Mat &img, int color_label, VisionSendData &data) {
+#if USING_ROI
+  ImageByROI(img);
+#endif
+  Mat ShowDebug = img.clone();
+  Armor TargetArmor;
+  float pitch, yaw, dis, XYZ[3];
+  detect_for_target(img, color_label, TargetArmor); // 筛选目标装甲板
+  if (ArmorState == ARMOR_FOUND) {
+    // TODO: 增加姿态解算
+    // solver.solve_angle(TargetArmor);
+    // solver.GetAngle(pitch, yaw, dis, xyz);
+    if (fabs(pitch) > 2 || fabs(yaw) > 1.5 || fabs(dis) > 4) {
+      data = {pitch, yaw, dis, 0, 1, 0, 0};
+    } else {
+      data = {0, 0, 0, 0, 1, 0, 0};
+    }
+  }
+#if UsingShowImg
+  drawResults(ShowDebug);
+  imshow("binary_img", binary_img);
+  imshow("Debug", ShowDebug);
+  showDebuginfo(data.pitch_angle.f, data.yaw_angle.f, data.dis.f, xyz);
+  waitKey(1);
+#endif
+}
 
 // 根据ROI区域识别
 void Detector::ImageByROI(Mat &img) {
