@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<opencv_storage>
+    <!--图像宽度:步进16-->
+    <nWidthValue>1280</nWidthValue>
+    <!--图像高度：步进2-->
+    <nHeightValue>720</nHeightValue>
+    <!--水平偏移-->
+    <nOffsetXValue>0</nOffsetXValue>
+    <!--垂直偏移-->
+    <nOffsetYValue>0</nOffsetYValue>
+    <!--水平镜像-->
+    <bSetBoolValue5>0</bSetBoolValue5>
+    <!--垂直镜像-->
+    <bSetBoolValue1>0</bSetBoolValue1>
+    <!-- 像素格式 -->
+    <PixelFormat>0x02180015</PixelFormat>
+    <!--水平合并-->
+    <nBinningHorizontal>1</nBinningHorizontal>
+    <!--垂直合并-->
+    <nBinningVertical>1</nBinningVertical>
+    <!--水平下采样-->
+    <nDecimationHorizontal>1</nDecimationHorizontal>
+    <!--垂直下采样-->
+    <nDecimationVertical>1</nDecimationVertical>
+    <!--采集触发帧率-->
+    <nAcquisitionBurstFrameCountValue>1</nAcquisitionBurstFrameCountValue>
+    <!--设置采集帧率-->
+    <fFPSValue>250.0000</fFPSValue>
+    <!--设置使能采集帧率控制-->
+    <nSetBoolValue3>1</nSetBoolValue3>
+    <!--曝光时间-->
+    <fExposureTime>5000.0000</fExposureTime>
+    <!--增益-->
+    <fGainvalue>8.0000</fGainvalue>
+    <!--自动增益-->
+    <nGainAuto>0</nGainAuto>
+    <!--黑电平-->
+    <nBlacklevelvalue>30</nBlacklevelvalue>
+    <!--黑电平使能-->
+    <bSetBoolValue2>1</bSetBoolValue2>
+    <!--伽马校正-->
+    <fGammaValue>0.7</fGammaValue>
+    <!--伽马校正使能-->
+    <bSetBoolValue4>1</bSetBoolValue4>
+    <!--图像旋转方向-->
+    <nImageOrientation>0</nImageOrientation>
+</opencv_storage>
