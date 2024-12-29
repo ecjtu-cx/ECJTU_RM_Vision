@@ -129,6 +129,30 @@ ECJTU_RM_Vision/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/build
 .PHONY : ECJTU_RM_Vision/fast
 
+ArmorDetecor/src/detector.o: ArmorDetecor/src/detector.cpp.o
+.PHONY : ArmorDetecor/src/detector.o
+
+# target to build an object file
+ArmorDetecor/src/detector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/ArmorDetecor/src/detector.cpp.o
+.PHONY : ArmorDetecor/src/detector.cpp.o
+
+ArmorDetecor/src/detector.i: ArmorDetecor/src/detector.cpp.i
+.PHONY : ArmorDetecor/src/detector.i
+
+# target to preprocess a source file
+ArmorDetecor/src/detector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/ArmorDetecor/src/detector.cpp.i
+.PHONY : ArmorDetecor/src/detector.cpp.i
+
+ArmorDetecor/src/detector.s: ArmorDetecor/src/detector.cpp.s
+.PHONY : ArmorDetecor/src/detector.s
+
+# target to generate assembly for a file
+ArmorDetecor/src/detector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/ArmorDetecor/src/detector.cpp.s
+.PHONY : ArmorDetecor/src/detector.cpp.s
+
 HKCamera/src/Camera.o: HKCamera/src/Camera.cpp.o
 .PHONY : HKCamera/src/Camera.o
 
@@ -186,6 +210,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ECJTU_RM_Vision"
+	@echo "... ArmorDetecor/src/detector.o"
+	@echo "... ArmorDetecor/src/detector.i"
+	@echo "... ArmorDetecor/src/detector.s"
 	@echo "... HKCamera/src/Camera.o"
 	@echo "... HKCamera/src/Camera.i"
 	@echo "... HKCamera/src/Camera.s"

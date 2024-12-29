@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/chengxi/SrcCode/ECJTU_RM_Vision/ArmorDetecor/src/detector.cpp" "CMakeFiles/ECJTU_RM_Vision.dir/ArmorDetecor/src/detector.cpp.o" "gcc" "CMakeFiles/ECJTU_RM_Vision.dir/ArmorDetecor/src/detector.cpp.o.d"
   "/home/chengxi/SrcCode/ECJTU_RM_Vision/HKCamera/src/Camera.cpp" "CMakeFiles/ECJTU_RM_Vision.dir/HKCamera/src/Camera.cpp.o" "gcc" "CMakeFiles/ECJTU_RM_Vision.dir/HKCamera/src/Camera.cpp.o.d"
   "/home/chengxi/SrcCode/ECJTU_RM_Vision/main.cpp" "CMakeFiles/ECJTU_RM_Vision.dir/main.cpp.o" "gcc" "CMakeFiles/ECJTU_RM_Vision.dir/main.cpp.o.d"
   )

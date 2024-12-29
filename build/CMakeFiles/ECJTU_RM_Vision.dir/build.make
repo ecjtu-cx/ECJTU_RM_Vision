@@ -73,39 +73,55 @@ CMakeFiles/ECJTU_RM_Vision.dir/main.cpp.o: CMakeFiles/ECJTU_RM_Vision.dir/flags.
 CMakeFiles/ECJTU_RM_Vision.dir/main.cpp.o: ../main.cpp
 CMakeFiles/ECJTU_RM_Vision.dir/main.cpp.o: CMakeFiles/ECJTU_RM_Vision.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chengxi/SrcCode/ECJTU_RM_Vision/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ECJTU_RM_Vision.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ECJTU_RM_Vision.dir/main.cpp.o -MF CMakeFiles/ECJTU_RM_Vision.dir/main.cpp.o.d -o CMakeFiles/ECJTU_RM_Vision.dir/main.cpp.o -c /home/chengxi/SrcCode/ECJTU_RM_Vision/main.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ECJTU_RM_Vision.dir/main.cpp.o -MF CMakeFiles/ECJTU_RM_Vision.dir/main.cpp.o.d -o CMakeFiles/ECJTU_RM_Vision.dir/main.cpp.o -c /home/chengxi/SrcCode/ECJTU_RM_Vision/main.cpp
 
 CMakeFiles/ECJTU_RM_Vision.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ECJTU_RM_Vision.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chengxi/SrcCode/ECJTU_RM_Vision/main.cpp > CMakeFiles/ECJTU_RM_Vision.dir/main.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chengxi/SrcCode/ECJTU_RM_Vision/main.cpp > CMakeFiles/ECJTU_RM_Vision.dir/main.cpp.i
 
 CMakeFiles/ECJTU_RM_Vision.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ECJTU_RM_Vision.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chengxi/SrcCode/ECJTU_RM_Vision/main.cpp -o CMakeFiles/ECJTU_RM_Vision.dir/main.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chengxi/SrcCode/ECJTU_RM_Vision/main.cpp -o CMakeFiles/ECJTU_RM_Vision.dir/main.cpp.s
+
+CMakeFiles/ECJTU_RM_Vision.dir/ArmorDetecor/src/detector.cpp.o: CMakeFiles/ECJTU_RM_Vision.dir/flags.make
+CMakeFiles/ECJTU_RM_Vision.dir/ArmorDetecor/src/detector.cpp.o: ../ArmorDetecor/src/detector.cpp
+CMakeFiles/ECJTU_RM_Vision.dir/ArmorDetecor/src/detector.cpp.o: CMakeFiles/ECJTU_RM_Vision.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chengxi/SrcCode/ECJTU_RM_Vision/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ECJTU_RM_Vision.dir/ArmorDetecor/src/detector.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ECJTU_RM_Vision.dir/ArmorDetecor/src/detector.cpp.o -MF CMakeFiles/ECJTU_RM_Vision.dir/ArmorDetecor/src/detector.cpp.o.d -o CMakeFiles/ECJTU_RM_Vision.dir/ArmorDetecor/src/detector.cpp.o -c /home/chengxi/SrcCode/ECJTU_RM_Vision/ArmorDetecor/src/detector.cpp
+
+CMakeFiles/ECJTU_RM_Vision.dir/ArmorDetecor/src/detector.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ECJTU_RM_Vision.dir/ArmorDetecor/src/detector.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chengxi/SrcCode/ECJTU_RM_Vision/ArmorDetecor/src/detector.cpp > CMakeFiles/ECJTU_RM_Vision.dir/ArmorDetecor/src/detector.cpp.i
+
+CMakeFiles/ECJTU_RM_Vision.dir/ArmorDetecor/src/detector.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ECJTU_RM_Vision.dir/ArmorDetecor/src/detector.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chengxi/SrcCode/ECJTU_RM_Vision/ArmorDetecor/src/detector.cpp -o CMakeFiles/ECJTU_RM_Vision.dir/ArmorDetecor/src/detector.cpp.s
 
 CMakeFiles/ECJTU_RM_Vision.dir/HKCamera/src/Camera.cpp.o: CMakeFiles/ECJTU_RM_Vision.dir/flags.make
 CMakeFiles/ECJTU_RM_Vision.dir/HKCamera/src/Camera.cpp.o: ../HKCamera/src/Camera.cpp
 CMakeFiles/ECJTU_RM_Vision.dir/HKCamera/src/Camera.cpp.o: CMakeFiles/ECJTU_RM_Vision.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chengxi/SrcCode/ECJTU_RM_Vision/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ECJTU_RM_Vision.dir/HKCamera/src/Camera.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ECJTU_RM_Vision.dir/HKCamera/src/Camera.cpp.o -MF CMakeFiles/ECJTU_RM_Vision.dir/HKCamera/src/Camera.cpp.o.d -o CMakeFiles/ECJTU_RM_Vision.dir/HKCamera/src/Camera.cpp.o -c /home/chengxi/SrcCode/ECJTU_RM_Vision/HKCamera/src/Camera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chengxi/SrcCode/ECJTU_RM_Vision/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ECJTU_RM_Vision.dir/HKCamera/src/Camera.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ECJTU_RM_Vision.dir/HKCamera/src/Camera.cpp.o -MF CMakeFiles/ECJTU_RM_Vision.dir/HKCamera/src/Camera.cpp.o.d -o CMakeFiles/ECJTU_RM_Vision.dir/HKCamera/src/Camera.cpp.o -c /home/chengxi/SrcCode/ECJTU_RM_Vision/HKCamera/src/Camera.cpp
 
 CMakeFiles/ECJTU_RM_Vision.dir/HKCamera/src/Camera.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ECJTU_RM_Vision.dir/HKCamera/src/Camera.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chengxi/SrcCode/ECJTU_RM_Vision/HKCamera/src/Camera.cpp > CMakeFiles/ECJTU_RM_Vision.dir/HKCamera/src/Camera.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chengxi/SrcCode/ECJTU_RM_Vision/HKCamera/src/Camera.cpp > CMakeFiles/ECJTU_RM_Vision.dir/HKCamera/src/Camera.cpp.i
 
 CMakeFiles/ECJTU_RM_Vision.dir/HKCamera/src/Camera.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ECJTU_RM_Vision.dir/HKCamera/src/Camera.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chengxi/SrcCode/ECJTU_RM_Vision/HKCamera/src/Camera.cpp -o CMakeFiles/ECJTU_RM_Vision.dir/HKCamera/src/Camera.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chengxi/SrcCode/ECJTU_RM_Vision/HKCamera/src/Camera.cpp -o CMakeFiles/ECJTU_RM_Vision.dir/HKCamera/src/Camera.cpp.s
 
 # Object files for target ECJTU_RM_Vision
 ECJTU_RM_Vision_OBJECTS = \
 "CMakeFiles/ECJTU_RM_Vision.dir/main.cpp.o" \
+"CMakeFiles/ECJTU_RM_Vision.dir/ArmorDetecor/src/detector.cpp.o" \
 "CMakeFiles/ECJTU_RM_Vision.dir/HKCamera/src/Camera.cpp.o"
 
 # External object files for target ECJTU_RM_Vision
 ECJTU_RM_Vision_EXTERNAL_OBJECTS =
 
 ../ECJTU_RM_Vision: CMakeFiles/ECJTU_RM_Vision.dir/main.cpp.o
+../ECJTU_RM_Vision: CMakeFiles/ECJTU_RM_Vision.dir/ArmorDetecor/src/detector.cpp.o
 ../ECJTU_RM_Vision: CMakeFiles/ECJTU_RM_Vision.dir/HKCamera/src/Camera.cpp.o
 ../ECJTU_RM_Vision: CMakeFiles/ECJTU_RM_Vision.dir/build.make
 ../ECJTU_RM_Vision: /usr/local/lib/libopencv_gapi.so.4.6.0
@@ -130,7 +146,7 @@ ECJTU_RM_Vision_EXTERNAL_OBJECTS =
 ../ECJTU_RM_Vision: /usr/local/lib/libopencv_imgproc.so.4.6.0
 ../ECJTU_RM_Vision: /usr/local/lib/libopencv_core.so.4.6.0
 ../ECJTU_RM_Vision: CMakeFiles/ECJTU_RM_Vision.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/chengxi/SrcCode/ECJTU_RM_Vision/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../ECJTU_RM_Vision"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/chengxi/SrcCode/ECJTU_RM_Vision/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ../ECJTU_RM_Vision"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ECJTU_RM_Vision.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

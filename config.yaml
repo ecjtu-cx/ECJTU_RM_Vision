@@ -1,0 +1,35 @@
+%YAML:1.0
+
+---
+#####################################
+# configs for detector              #
+#####################################
+detector:
+  min_lightness: 180
+
+  light_params:
+    min_ratio: 0.12
+    max_ratio: 0.55
+    max_angle: 40.0
+  armor_params:
+    min_light_ratio: 0.6
+    min_small_center_distance: 0.8
+    max_small_center_distance: 3
+    min_large_center_distance: 3.2
+    max_large_center_distance: 4.6
+    max_angle: 40.0
+    max_angle_diff: 20
+  classifier_params:
+    model_path: "../ArmorDetector/model/mlp.onnx"
+    label_path: "../ArmorDetector/model/label.txt"
+    threshold: 0.7
+    ignore_classes:
+      - negative
+#      - outpost
+#      - base
+#      - guard
+#      - "1"
+#      - "2"
+#      - "3"
+#      - "4"
+#      - "5"
