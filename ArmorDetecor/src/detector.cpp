@@ -1,9 +1,13 @@
 #include "detector.h"
+#include <iostream>
 
 using namespace cv;
+using namespace std;
 namespace rm_auto_aim {
 // 初始化Detector函数
 Detector::Detector(const std::string &config_file_path) {
+  // TODO: Delete this line
+  cout << __func__ << endl;
   cv::FileStorage config(config_file_path, cv::FileStorage::READ);
   // 初始化灯条参数
   config["detector"]["min_lightness"] >> min_lightness;
@@ -47,9 +51,11 @@ void Detector::run(Mat &img, int color_label, VisionSendData &data) {
 #if USING_ROI
   ImageByROI(img);
 #endif
+  // TODO: Delete this line
+  cout << __func__ << endl;
   Mat ShowDebug = img.clone();
   Armor TargetArmor;
-  float pitch, yaw, dis, XYZ[3];
+  float pitch, yaw, dis, xyz[3];
   detect_for_target(img, color_label, TargetArmor); // 筛选目标装甲板
   if (ArmorState == ARMOR_FOUND) {
     // TODO: 增加姿态解算
@@ -72,22 +78,28 @@ void Detector::run(Mat &img, int color_label, VisionSendData &data) {
 
 // 根据ROI区域识别
 void Detector::ImageByROI(Mat &img) {
+  // TODO: Delete this line
+  cout << __func__ << endl;
   static Rect imgBound = Rect(0, 0, img.cols, img.rows);
   if (ArmorState == ARMOR_FOUND) {
     imgBound =
         Rect(img.cols / 4, img.rows / 4, img.cols / 4 * 3, img.rows / 4 * 3);
   } else if (ArmorState == ARMOR_NOT_FOUND) {
-    static int lost_count = 0;
-    if (++lost_count > 6) // 丢失目标超过6帧，恢复全图搜索
+    static int lost_cnt;
+    if (++lost_cnt > 6) // 装甲板丢失5振
     {
       imgBound = Rect(0, 0, img.cols, img.rows);
-      lost_count = 0;
+      lost_cnt = 0;
     }
   }
   img = img(imgBound).clone();
 }
+
+// 寻找目标装甲板
 int Detector::detect_for_target(const cv::Mat &frame, int color_label,
                                 Armor &TargetArmor) {
+  // TODO: Delete this line
+  cout << __func__ << endl;
   detector(frame, color_label);
   // TODO: 根据confidence排序，选择最大的
   //        // 根据confidence排序，并选择最大的
@@ -114,6 +126,8 @@ int Detector::detect_for_target(const cv::Mat &frame, int color_label,
 }
 // 识别函数
 void Detector::detector(const cv::Mat &input, int enemy_color) {
+  // TODO: Delete this line
+  cout << __func__ << endl;
   Mat inputs = input.clone();
   // 预处理
   PreProcessImage(inputs, binary_img, enemy_color);
@@ -136,6 +150,8 @@ void Detector::detector(const cv::Mat &input, int enemy_color) {
 
 void Detector::PreProcessImage(const cv::Mat &input, cv::Mat &output,
                                int enemy_color) {
+  // TODO: Delete this line
+  cout << __func__ << endl;
   Mat grayImg, bin;
   // 灰度处理+阈值化
   cvtColor(input, grayImg, COLOR_BGR2GRAY);
@@ -166,6 +182,8 @@ void Detector::PreProcessImage(const cv::Mat &input, cv::Mat &output,
 // 寻找灯条
 void Detector::FindLights(const cv::Mat &rbg_img, const cv::Mat &binaryImg,
                           std::vector<Light> &lights) {
+  // TODO: Delete this line
+  cout << __func__ << endl;
   lights.clear();
   using std::vector;
   vector<vector<cv::Point>> contours;
@@ -210,6 +228,8 @@ void Detector::FindLights(const cv::Mat &rbg_img, const cv::Mat &binaryImg,
 // 匹配装甲板
 void Detector::matchArmor(const std::vector<Light> &lights,
                           std::vector<Armor> &Armors, int enemy_color) {
+  // TODO: Delete this line
+  cout << __func__ << endl;
   Armors.clear();
   // Loop all the pairing of lights
   for (auto light_1 = lights.begin(); light_1 != lights.end(); light_1++) {
@@ -230,6 +250,8 @@ void Detector::matchArmor(const std::vector<Light> &lights,
   }
 }
 bool Detector::isLight(const Light &light) {
+  // TODO: Delete this line
+  cout << __func__ << endl;
   // The ratio of light (short side / long side)
   float ratio = light.width / light.length;
   bool ratio_ok = L_Param.min_ratio < ratio && ratio < L_Param.max_ratio;
@@ -249,6 +271,8 @@ bool Detector::isLight(const Light &light) {
   return is_light;
 }
 bool Detector::isArmor(Armor &armor) {
+  // TODO: Delete this line
+  cout << __func__ << endl;
   Light light_1 = armor.left_light;
   Light light_2 = armor.right_light;
   // Ratio of the length of 2 lights (short side / long side)
@@ -290,6 +314,8 @@ bool Detector::isArmor(Armor &armor) {
 // 确认是否有其他灯条在2个灯条形成的boundingRect中
 bool Detector::containLight(const Light &light_1, const Light &light_2,
                             const std::vector<Light> &lights) {
+  // TODO: Delete this line
+  cout << __func__ << endl;
   auto points = std::vector<cv::Point2f>{light_1.top, light_1.bottom,
                                          light_2.top, light_2.bottom};
   auto bounding_rect = cv::boundingRect(points);
@@ -311,6 +337,8 @@ bool Detector::containLight(const Light &light_1, const Light &light_2,
 
 // 画出灯条装甲板轮廓
 void Detector::drawResults(cv::Mat &img) {
+  // TODO: Delete this line
+  cout << __func__ << endl;
   // Draw Lights
   for (const auto &light : True_lights) {
     cv::circle(img, light.top, 3, cv::Scalar(255, 255, 255), 1);
@@ -338,7 +366,8 @@ void Detector::drawResults(cv::Mat &img) {
 // 构造窗口显示角度姿态信息
 void Detector::showDebuginfo(float pitch, float yaw, float dis, float XYZ[3]) {
   Mat img = Mat::zeros(250, 500, CV_8UC3);
-
+  // TODO: Delete this line
+  cout << __func__ << endl;
   if (ArmorState == ARMOR_FOUND) {
     putText(img, "ARMOR_FOUND", Point(100, 35), FONT_HERSHEY_SIMPLEX, 1,
             Scalar(255, 0, 255), 1, 8, false);

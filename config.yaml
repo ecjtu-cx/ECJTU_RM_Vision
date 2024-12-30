@@ -19,17 +19,17 @@ detector:
     max_large_center_distance: 4.6
     max_angle: 40.0
     max_angle_diff: 20
-  classifier_params:
-    model_path: "../ArmorDetector/model/mlp.onnx"
-    label_path: "../ArmorDetector/model/label.txt"
-    threshold: 0.7
-    ignore_classes:
-      - negative
-#      - outpost
-#      - base
-#      - guard
-#      - "1"
-#      - "2"
-#      - "3"
-#      - "4"
-#      - "5"
+#   classifier_params:
+#     model_path: "../ArmorDetector/model/mlp.onnx"
+#     label_path: "../ArmorDetector/model/label.txt"
+#     threshold: 0.7
+#     ignore_classes:
+#       - negative
+# #      - outpost
+# #      - base
+# #      - guard
+# #      - "1"
+# #      - "2"
+# #      - "3"
+# #      - "4"
+# #      - "5"
