@@ -6,8 +6,6 @@ using namespace std;
 namespace rm_auto_aim {
 // 初始化Detector函数
 Detector::Detector(const std::string &config_file_path) {
-  // TODO: Delete this line
-  cout << __func__ << endl;
   cv::FileStorage config(config_file_path, cv::FileStorage::READ);
   // 初始化灯条参数
   config["detector"]["min_lightness"] >> min_lightness;
@@ -51,8 +49,6 @@ void Detector::run(Mat &img, int color_label, VisionSendData &data) {
 #if USING_ROI
   ImageByROI(img);
 #endif
-  // TODO: Delete this line
-  cout << __func__ << endl;
   Mat ShowDebug = img.clone();
   Armor TargetArmor;
   float pitch, yaw, dis, xyz[3];
@@ -78,8 +74,6 @@ void Detector::run(Mat &img, int color_label, VisionSendData &data) {
 
 // 根据ROI区域识别
 void Detector::ImageByROI(Mat &img) {
-  // TODO: Delete this line
-  cout << __func__ << endl;
   static Rect imgBound = Rect(0, 0, img.cols, img.rows);
   if (ArmorState == ARMOR_FOUND) {
     imgBound =
@@ -98,8 +92,6 @@ void Detector::ImageByROI(Mat &img) {
 // 寻找目标装甲板
 int Detector::detect_for_target(const cv::Mat &frame, int color_label,
                                 Armor &TargetArmor) {
-  // TODO: Delete this line
-  cout << __func__ << endl;
   detector(frame, color_label);
   // TODO: 根据confidence排序，选择最大的
   //        // 根据confidence排序，并选择最大的
@@ -126,8 +118,6 @@ int Detector::detect_for_target(const cv::Mat &frame, int color_label,
 }
 // 识别函数
 void Detector::detector(const cv::Mat &input, int enemy_color) {
-  // TODO: Delete this line
-  cout << __func__ << endl;
   Mat inputs = input.clone();
   // 预处理
   PreProcessImage(inputs, binary_img, enemy_color);
@@ -148,20 +138,23 @@ void Detector::detector(const cv::Mat &input, int enemy_color) {
   }
 }
 
+// 预处理图像
 void Detector::PreProcessImage(const cv::Mat &input, cv::Mat &output,
                                int enemy_color) {
-  // TODO: Delete this line
-  cout << __func__ << endl;
+  if (input.empty()) {
+    std::cerr << "Error: Input image is empty!" << std::endl;
+    return;
+  }
   Mat grayImg, bin;
   // 灰度处理+阈值化
-  cvtColor(input, grayImg, COLOR_BGR2GRAY);
+  cv::cvtColor(input, grayImg, COLOR_BGR2GRAY);
   threshold(grayImg, output, min_lightness, 255, THRESH_BINARY);
   // TODO: 通道相减处理
 #if ChannelSubtracte
   Mat element0 = getStructuringElement(MORPH_ELLIPSE, Size(7, 7));
   Mat element1 = getStructuringElement(MORPH_ELLIPSE, Size(5, 5));
   Mat element2 = getStructuringElement(MORPH_ELLIPSE, Size(3, 3));
-  // 通道相间
+  // 通道相减去
   Mat color;
   std::vector<Mat> splited;
   split(input, splited);
