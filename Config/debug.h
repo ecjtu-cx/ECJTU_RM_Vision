@@ -1,0 +1,8 @@
+// 启用通道相减
+#define ChannelSubtracte 0
+// 启用ROI区域加速
+#define USING_ROI 0
+// 显示调试图像
+#define UsingShowImg 1
+// 追踪红色装甲板
+#define DETEDRED 0

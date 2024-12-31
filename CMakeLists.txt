@@ -19,16 +19,20 @@ include_directories(
 )
 
 include_directories(
-    ./
-    ./HKCamera/include
-    ./ArmorDetecor/include
-    ./SerialPort/include
+    ./Config
+    ./include/HKCamera
+    ./include/ArmorDetector
+    ./include/AngleSolver
+    ./include/SerialPort
+    ./include/Thread
 )
 
 file(GLOB_RECURSE source
-    ./HKCamera/src/*.*
-    ./ArmorDetecor/src/*.*
-    ./SerialPort/src/*.*
+    ./src/HKCamera/*.*
+    ./src/AngleSolver/*.*
+    ./src/ArmorDetector/*.*
+    ./src/SerialPort/*.*
+    ./src/Thread/*.*
 )
 
 add_executable(ECJTU_RM_Vision ./main.cpp ${source})
@@ -36,11 +40,11 @@ add_executable(ECJTU_RM_Vision ./main.cpp ${source})
 target_link_libraries(ECJTU_RM_Vision
     ${OpenCV_LIBS}
     ${EIGEN3_LIBRARIES}
-    ${CMAKE_CURRENT_SOURCE_DIR}/HKCamera/libs/linux/libFormatConversion.so
-    ${CMAKE_CURRENT_SOURCE_DIR}/HKCamera/libs/linux/libMediaProcess.so
-    ${CMAKE_CURRENT_SOURCE_DIR}/HKCamera/libs/linux/libMvCameraControl.so
-    ${CMAKE_CURRENT_SOURCE_DIR}/HKCamera/libs/linux/libMVRender.so
-    ${CMAKE_CURRENT_SOURCE_DIR}/HKCamera/libs/linux/libMvUsb3vTL.so
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/libFormatConversion.so
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/libMediaProcess.so
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/libMvCameraControl.so
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/libMVRender.so
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/libMvUsb3vTL.so
     fmt::fmt
     -lpthread -lm
 )

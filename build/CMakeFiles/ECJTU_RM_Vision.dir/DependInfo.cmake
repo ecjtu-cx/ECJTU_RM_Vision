@@ -8,10 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/chengxi/SrcCode/ECJTU_RM_Vision/ArmorDetecor/src/detector.cpp" "CMakeFiles/ECJTU_RM_Vision.dir/ArmorDetecor/src/detector.cpp.o" "gcc" "CMakeFiles/ECJTU_RM_Vision.dir/ArmorDetecor/src/detector.cpp.o.d"
-  "/home/chengxi/SrcCode/ECJTU_RM_Vision/HKCamera/src/Camera.cpp" "CMakeFiles/ECJTU_RM_Vision.dir/HKCamera/src/Camera.cpp.o" "gcc" "CMakeFiles/ECJTU_RM_Vision.dir/HKCamera/src/Camera.cpp.o.d"
-  "/home/chengxi/SrcCode/ECJTU_RM_Vision/SerialPort/src/serialport.cpp" "CMakeFiles/ECJTU_RM_Vision.dir/SerialPort/src/serialport.cpp.o" "gcc" "CMakeFiles/ECJTU_RM_Vision.dir/SerialPort/src/serialport.cpp.o.d"
   "/home/chengxi/SrcCode/ECJTU_RM_Vision/main.cpp" "CMakeFiles/ECJTU_RM_Vision.dir/main.cpp.o" "gcc" "CMakeFiles/ECJTU_RM_Vision.dir/main.cpp.o.d"
+  "/home/chengxi/SrcCode/ECJTU_RM_Vision/src/AngleSolver/anglesolver.cpp" "CMakeFiles/ECJTU_RM_Vision.dir/src/AngleSolver/anglesolver.cpp.o" "gcc" "CMakeFiles/ECJTU_RM_Vision.dir/src/AngleSolver/anglesolver.cpp.o.d"
+  "/home/chengxi/SrcCode/ECJTU_RM_Vision/src/ArmorDetector/detector.cpp" "CMakeFiles/ECJTU_RM_Vision.dir/src/ArmorDetector/detector.cpp.o" "gcc" "CMakeFiles/ECJTU_RM_Vision.dir/src/ArmorDetector/detector.cpp.o.d"
+  "/home/chengxi/SrcCode/ECJTU_RM_Vision/src/HKCamera/Camera.cpp" "CMakeFiles/ECJTU_RM_Vision.dir/src/HKCamera/Camera.cpp.o" "gcc" "CMakeFiles/ECJTU_RM_Vision.dir/src/HKCamera/Camera.cpp.o.d"
+  "/home/chengxi/SrcCode/ECJTU_RM_Vision/src/SerialPort/serialport.cpp" "CMakeFiles/ECJTU_RM_Vision.dir/src/SerialPort/serialport.cpp.o" "gcc" "CMakeFiles/ECJTU_RM_Vision.dir/src/SerialPort/serialport.cpp.o.d"
+  "/home/chengxi/SrcCode/ECJTU_RM_Vision/src/Thread/factor.cpp" "CMakeFiles/ECJTU_RM_Vision.dir/src/Thread/factor.cpp.o" "gcc" "CMakeFiles/ECJTU_RM_Vision.dir/src/Thread/factor.cpp.o.d"
+  "/home/chengxi/SrcCode/ECJTU_RM_Vision/src/Thread/thread.cpp" "CMakeFiles/ECJTU_RM_Vision.dir/src/Thread/thread.cpp.o" "gcc" "CMakeFiles/ECJTU_RM_Vision.dir/src/Thread/thread.cpp.o.d"
   )
 
 # Targets to which this target links.

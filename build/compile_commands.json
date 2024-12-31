@@ -1,22 +1,37 @@
 [
 {
   "directory": "/home/chengxi/SrcCode/ECJTU_RM_Vision/build",
-  "command": "/usr/bin/g++ -DFMT_LOCALE -DFMT_SHARED -I/usr/include/eigen3 -I/home/chengxi/SrcCode/ECJTU_RM_Vision/build -I/home/chengxi/SrcCode/ECJTU_RM_Vision -I/home/chengxi/SrcCode/ECJTU_RM_Vision/. -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./HKCamera/include -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./ArmorDetecor/include -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./SerialPort/include -isystem /usr/local/include/opencv4 -g -o CMakeFiles/ECJTU_RM_Vision.dir/main.cpp.o -c /home/chengxi/SrcCode/ECJTU_RM_Vision/main.cpp",
+  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -I/usr/include/eigen3 -I/home/chengxi/SrcCode/ECJTU_RM_Vision/build -I/home/chengxi/SrcCode/ECJTU_RM_Vision -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./Config -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/HKCamera -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/ArmorDetector -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/AngleSolver -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/SerialPort -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/Thread -isystem /usr/local/include/opencv4 -g -o CMakeFiles/ECJTU_RM_Vision.dir/main.cpp.o -c /home/chengxi/SrcCode/ECJTU_RM_Vision/main.cpp",
   "file": "/home/chengxi/SrcCode/ECJTU_RM_Vision/main.cpp"
 },
 {
   "directory": "/home/chengxi/SrcCode/ECJTU_RM_Vision/build",
-  "command": "/usr/bin/g++ -DFMT_LOCALE -DFMT_SHARED -I/usr/include/eigen3 -I/home/chengxi/SrcCode/ECJTU_RM_Vision/build -I/home/chengxi/SrcCode/ECJTU_RM_Vision -I/home/chengxi/SrcCode/ECJTU_RM_Vision/. -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./HKCamera/include -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./ArmorDetecor/include -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./SerialPort/include -isystem /usr/local/include/opencv4 -g -o CMakeFiles/ECJTU_RM_Vision.dir/ArmorDetecor/src/detector.cpp.o -c /home/chengxi/SrcCode/ECJTU_RM_Vision/ArmorDetecor/src/detector.cpp",
-  "file": "/home/chengxi/SrcCode/ECJTU_RM_Vision/ArmorDetecor/src/detector.cpp"
+  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -I/usr/include/eigen3 -I/home/chengxi/SrcCode/ECJTU_RM_Vision/build -I/home/chengxi/SrcCode/ECJTU_RM_Vision -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./Config -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/HKCamera -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/ArmorDetector -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/AngleSolver -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/SerialPort -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/Thread -isystem /usr/local/include/opencv4 -g -o CMakeFiles/ECJTU_RM_Vision.dir/src/AngleSolver/anglesolver.cpp.o -c /home/chengxi/SrcCode/ECJTU_RM_Vision/src/AngleSolver/anglesolver.cpp",
+  "file": "/home/chengxi/SrcCode/ECJTU_RM_Vision/src/AngleSolver/anglesolver.cpp"
 },
 {
   "directory": "/home/chengxi/SrcCode/ECJTU_RM_Vision/build",
-  "command": "/usr/bin/g++ -DFMT_LOCALE -DFMT_SHARED -I/usr/include/eigen3 -I/home/chengxi/SrcCode/ECJTU_RM_Vision/build -I/home/chengxi/SrcCode/ECJTU_RM_Vision -I/home/chengxi/SrcCode/ECJTU_RM_Vision/. -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./HKCamera/include -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./ArmorDetecor/include -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./SerialPort/include -isystem /usr/local/include/opencv4 -g -o CMakeFiles/ECJTU_RM_Vision.dir/HKCamera/src/Camera.cpp.o -c /home/chengxi/SrcCode/ECJTU_RM_Vision/HKCamera/src/Camera.cpp",
-  "file": "/home/chengxi/SrcCode/ECJTU_RM_Vision/HKCamera/src/Camera.cpp"
+  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -I/usr/include/eigen3 -I/home/chengxi/SrcCode/ECJTU_RM_Vision/build -I/home/chengxi/SrcCode/ECJTU_RM_Vision -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./Config -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/HKCamera -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/ArmorDetector -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/AngleSolver -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/SerialPort -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/Thread -isystem /usr/local/include/opencv4 -g -o CMakeFiles/ECJTU_RM_Vision.dir/src/ArmorDetector/detector.cpp.o -c /home/chengxi/SrcCode/ECJTU_RM_Vision/src/ArmorDetector/detector.cpp",
+  "file": "/home/chengxi/SrcCode/ECJTU_RM_Vision/src/ArmorDetector/detector.cpp"
 },
 {
   "directory": "/home/chengxi/SrcCode/ECJTU_RM_Vision/build",
-  "command": "/usr/bin/g++ -DFMT_LOCALE -DFMT_SHARED -I/usr/include/eigen3 -I/home/chengxi/SrcCode/ECJTU_RM_Vision/build -I/home/chengxi/SrcCode/ECJTU_RM_Vision -I/home/chengxi/SrcCode/ECJTU_RM_Vision/. -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./HKCamera/include -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./ArmorDetecor/include -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./SerialPort/include -isystem /usr/local/include/opencv4 -g -o CMakeFiles/ECJTU_RM_Vision.dir/SerialPort/src/serialport.cpp.o -c /home/chengxi/SrcCode/ECJTU_RM_Vision/SerialPort/src/serialport.cpp",
-  "file": "/home/chengxi/SrcCode/ECJTU_RM_Vision/SerialPort/src/serialport.cpp"
+  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -I/usr/include/eigen3 -I/home/chengxi/SrcCode/ECJTU_RM_Vision/build -I/home/chengxi/SrcCode/ECJTU_RM_Vision -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./Config -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/HKCamera -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/ArmorDetector -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/AngleSolver -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/SerialPort -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/Thread -isystem /usr/local/include/opencv4 -g -o CMakeFiles/ECJTU_RM_Vision.dir/src/HKCamera/Camera.cpp.o -c /home/chengxi/SrcCode/ECJTU_RM_Vision/src/HKCamera/Camera.cpp",
+  "file": "/home/chengxi/SrcCode/ECJTU_RM_Vision/src/HKCamera/Camera.cpp"
+},
+{
+  "directory": "/home/chengxi/SrcCode/ECJTU_RM_Vision/build",
+  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -I/usr/include/eigen3 -I/home/chengxi/SrcCode/ECJTU_RM_Vision/build -I/home/chengxi/SrcCode/ECJTU_RM_Vision -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./Config -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/HKCamera -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/ArmorDetector -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/AngleSolver -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/SerialPort -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/Thread -isystem /usr/local/include/opencv4 -g -o CMakeFiles/ECJTU_RM_Vision.dir/src/SerialPort/serialport.cpp.o -c /home/chengxi/SrcCode/ECJTU_RM_Vision/src/SerialPort/serialport.cpp",
+  "file": "/home/chengxi/SrcCode/ECJTU_RM_Vision/src/SerialPort/serialport.cpp"
+},
+{
+  "directory": "/home/chengxi/SrcCode/ECJTU_RM_Vision/build",
+  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -I/usr/include/eigen3 -I/home/chengxi/SrcCode/ECJTU_RM_Vision/build -I/home/chengxi/SrcCode/ECJTU_RM_Vision -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./Config -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/HKCamera -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/ArmorDetector -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/AngleSolver -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/SerialPort -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/Thread -isystem /usr/local/include/opencv4 -g -o CMakeFiles/ECJTU_RM_Vision.dir/src/Thread/factor.cpp.o -c /home/chengxi/SrcCode/ECJTU_RM_Vision/src/Thread/factor.cpp",
+  "file": "/home/chengxi/SrcCode/ECJTU_RM_Vision/src/Thread/factor.cpp"
+},
+{
+  "directory": "/home/chengxi/SrcCode/ECJTU_RM_Vision/build",
+  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -I/usr/include/eigen3 -I/home/chengxi/SrcCode/ECJTU_RM_Vision/build -I/home/chengxi/SrcCode/ECJTU_RM_Vision -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./Config -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/HKCamera -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/ArmorDetector -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/AngleSolver -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/SerialPort -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/Thread -isystem /usr/local/include/opencv4 -g -o CMakeFiles/ECJTU_RM_Vision.dir/src/Thread/thread.cpp.o -c /home/chengxi/SrcCode/ECJTU_RM_Vision/src/Thread/thread.cpp",
+  "file": "/home/chengxi/SrcCode/ECJTU_RM_Vision/src/Thread/thread.cpp"
 }
 ]

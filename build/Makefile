@@ -129,78 +129,6 @@ ECJTU_RM_Vision/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/build
 .PHONY : ECJTU_RM_Vision/fast
 
-ArmorDetecor/src/detector.o: ArmorDetecor/src/detector.cpp.o
-.PHONY : ArmorDetecor/src/detector.o
-
-# target to build an object file
-ArmorDetecor/src/detector.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/ArmorDetecor/src/detector.cpp.o
-.PHONY : ArmorDetecor/src/detector.cpp.o
-
-ArmorDetecor/src/detector.i: ArmorDetecor/src/detector.cpp.i
-.PHONY : ArmorDetecor/src/detector.i
-
-# target to preprocess a source file
-ArmorDetecor/src/detector.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/ArmorDetecor/src/detector.cpp.i
-.PHONY : ArmorDetecor/src/detector.cpp.i
-
-ArmorDetecor/src/detector.s: ArmorDetecor/src/detector.cpp.s
-.PHONY : ArmorDetecor/src/detector.s
-
-# target to generate assembly for a file
-ArmorDetecor/src/detector.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/ArmorDetecor/src/detector.cpp.s
-.PHONY : ArmorDetecor/src/detector.cpp.s
-
-HKCamera/src/Camera.o: HKCamera/src/Camera.cpp.o
-.PHONY : HKCamera/src/Camera.o
-
-# target to build an object file
-HKCamera/src/Camera.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/HKCamera/src/Camera.cpp.o
-.PHONY : HKCamera/src/Camera.cpp.o
-
-HKCamera/src/Camera.i: HKCamera/src/Camera.cpp.i
-.PHONY : HKCamera/src/Camera.i
-
-# target to preprocess a source file
-HKCamera/src/Camera.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/HKCamera/src/Camera.cpp.i
-.PHONY : HKCamera/src/Camera.cpp.i
-
-HKCamera/src/Camera.s: HKCamera/src/Camera.cpp.s
-.PHONY : HKCamera/src/Camera.s
-
-# target to generate assembly for a file
-HKCamera/src/Camera.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/HKCamera/src/Camera.cpp.s
-.PHONY : HKCamera/src/Camera.cpp.s
-
-SerialPort/src/serialport.o: SerialPort/src/serialport.cpp.o
-.PHONY : SerialPort/src/serialport.o
-
-# target to build an object file
-SerialPort/src/serialport.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/SerialPort/src/serialport.cpp.o
-.PHONY : SerialPort/src/serialport.cpp.o
-
-SerialPort/src/serialport.i: SerialPort/src/serialport.cpp.i
-.PHONY : SerialPort/src/serialport.i
-
-# target to preprocess a source file
-SerialPort/src/serialport.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/SerialPort/src/serialport.cpp.i
-.PHONY : SerialPort/src/serialport.cpp.i
-
-SerialPort/src/serialport.s: SerialPort/src/serialport.cpp.s
-.PHONY : SerialPort/src/serialport.s
-
-# target to generate assembly for a file
-SerialPort/src/serialport.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/SerialPort/src/serialport.cpp.s
-.PHONY : SerialPort/src/serialport.cpp.s
-
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -225,6 +153,150 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/AngleSolver/anglesolver.o: src/AngleSolver/anglesolver.cpp.o
+.PHONY : src/AngleSolver/anglesolver.o
+
+# target to build an object file
+src/AngleSolver/anglesolver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/src/AngleSolver/anglesolver.cpp.o
+.PHONY : src/AngleSolver/anglesolver.cpp.o
+
+src/AngleSolver/anglesolver.i: src/AngleSolver/anglesolver.cpp.i
+.PHONY : src/AngleSolver/anglesolver.i
+
+# target to preprocess a source file
+src/AngleSolver/anglesolver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/src/AngleSolver/anglesolver.cpp.i
+.PHONY : src/AngleSolver/anglesolver.cpp.i
+
+src/AngleSolver/anglesolver.s: src/AngleSolver/anglesolver.cpp.s
+.PHONY : src/AngleSolver/anglesolver.s
+
+# target to generate assembly for a file
+src/AngleSolver/anglesolver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/src/AngleSolver/anglesolver.cpp.s
+.PHONY : src/AngleSolver/anglesolver.cpp.s
+
+src/ArmorDetector/detector.o: src/ArmorDetector/detector.cpp.o
+.PHONY : src/ArmorDetector/detector.o
+
+# target to build an object file
+src/ArmorDetector/detector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/src/ArmorDetector/detector.cpp.o
+.PHONY : src/ArmorDetector/detector.cpp.o
+
+src/ArmorDetector/detector.i: src/ArmorDetector/detector.cpp.i
+.PHONY : src/ArmorDetector/detector.i
+
+# target to preprocess a source file
+src/ArmorDetector/detector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/src/ArmorDetector/detector.cpp.i
+.PHONY : src/ArmorDetector/detector.cpp.i
+
+src/ArmorDetector/detector.s: src/ArmorDetector/detector.cpp.s
+.PHONY : src/ArmorDetector/detector.s
+
+# target to generate assembly for a file
+src/ArmorDetector/detector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/src/ArmorDetector/detector.cpp.s
+.PHONY : src/ArmorDetector/detector.cpp.s
+
+src/HKCamera/Camera.o: src/HKCamera/Camera.cpp.o
+.PHONY : src/HKCamera/Camera.o
+
+# target to build an object file
+src/HKCamera/Camera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/src/HKCamera/Camera.cpp.o
+.PHONY : src/HKCamera/Camera.cpp.o
+
+src/HKCamera/Camera.i: src/HKCamera/Camera.cpp.i
+.PHONY : src/HKCamera/Camera.i
+
+# target to preprocess a source file
+src/HKCamera/Camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/src/HKCamera/Camera.cpp.i
+.PHONY : src/HKCamera/Camera.cpp.i
+
+src/HKCamera/Camera.s: src/HKCamera/Camera.cpp.s
+.PHONY : src/HKCamera/Camera.s
+
+# target to generate assembly for a file
+src/HKCamera/Camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/src/HKCamera/Camera.cpp.s
+.PHONY : src/HKCamera/Camera.cpp.s
+
+src/SerialPort/serialport.o: src/SerialPort/serialport.cpp.o
+.PHONY : src/SerialPort/serialport.o
+
+# target to build an object file
+src/SerialPort/serialport.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/src/SerialPort/serialport.cpp.o
+.PHONY : src/SerialPort/serialport.cpp.o
+
+src/SerialPort/serialport.i: src/SerialPort/serialport.cpp.i
+.PHONY : src/SerialPort/serialport.i
+
+# target to preprocess a source file
+src/SerialPort/serialport.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/src/SerialPort/serialport.cpp.i
+.PHONY : src/SerialPort/serialport.cpp.i
+
+src/SerialPort/serialport.s: src/SerialPort/serialport.cpp.s
+.PHONY : src/SerialPort/serialport.s
+
+# target to generate assembly for a file
+src/SerialPort/serialport.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/src/SerialPort/serialport.cpp.s
+.PHONY : src/SerialPort/serialport.cpp.s
+
+src/Thread/factor.o: src/Thread/factor.cpp.o
+.PHONY : src/Thread/factor.o
+
+# target to build an object file
+src/Thread/factor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/src/Thread/factor.cpp.o
+.PHONY : src/Thread/factor.cpp.o
+
+src/Thread/factor.i: src/Thread/factor.cpp.i
+.PHONY : src/Thread/factor.i
+
+# target to preprocess a source file
+src/Thread/factor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/src/Thread/factor.cpp.i
+.PHONY : src/Thread/factor.cpp.i
+
+src/Thread/factor.s: src/Thread/factor.cpp.s
+.PHONY : src/Thread/factor.s
+
+# target to generate assembly for a file
+src/Thread/factor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/src/Thread/factor.cpp.s
+.PHONY : src/Thread/factor.cpp.s
+
+src/Thread/thread.o: src/Thread/thread.cpp.o
+.PHONY : src/Thread/thread.o
+
+# target to build an object file
+src/Thread/thread.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/src/Thread/thread.cpp.o
+.PHONY : src/Thread/thread.cpp.o
+
+src/Thread/thread.i: src/Thread/thread.cpp.i
+.PHONY : src/Thread/thread.i
+
+# target to preprocess a source file
+src/Thread/thread.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/src/Thread/thread.cpp.i
+.PHONY : src/Thread/thread.cpp.i
+
+src/Thread/thread.s: src/Thread/thread.cpp.s
+.PHONY : src/Thread/thread.s
+
+# target to generate assembly for a file
+src/Thread/thread.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/src/Thread/thread.cpp.s
+.PHONY : src/Thread/thread.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -234,18 +306,27 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ECJTU_RM_Vision"
-	@echo "... ArmorDetecor/src/detector.o"
-	@echo "... ArmorDetecor/src/detector.i"
-	@echo "... ArmorDetecor/src/detector.s"
-	@echo "... HKCamera/src/Camera.o"
-	@echo "... HKCamera/src/Camera.i"
-	@echo "... HKCamera/src/Camera.s"
-	@echo "... SerialPort/src/serialport.o"
-	@echo "... SerialPort/src/serialport.i"
-	@echo "... SerialPort/src/serialport.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/AngleSolver/anglesolver.o"
+	@echo "... src/AngleSolver/anglesolver.i"
+	@echo "... src/AngleSolver/anglesolver.s"
+	@echo "... src/ArmorDetector/detector.o"
+	@echo "... src/ArmorDetector/detector.i"
+	@echo "... src/ArmorDetector/detector.s"
+	@echo "... src/HKCamera/Camera.o"
+	@echo "... src/HKCamera/Camera.i"
+	@echo "... src/HKCamera/Camera.s"
+	@echo "... src/SerialPort/serialport.o"
+	@echo "... src/SerialPort/serialport.i"
+	@echo "... src/SerialPort/serialport.s"
+	@echo "... src/Thread/factor.o"
+	@echo "... src/Thread/factor.i"
+	@echo "... src/Thread/factor.s"
+	@echo "... src/Thread/thread.o"
+	@echo "... src/Thread/thread.i"
+	@echo "... src/Thread/thread.s"
 .PHONY : help
 
 
