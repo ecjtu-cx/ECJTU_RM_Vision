@@ -12,6 +12,7 @@
 #include "armor.h"
 #include "serialport.h"
 #include "anglesolver.h"
+#include "debug.h"
 
 namespace rm_auto_aim {
 class Detector {

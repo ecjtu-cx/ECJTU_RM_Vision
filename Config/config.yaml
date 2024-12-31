@@ -2,6 +2,25 @@
 
 ---
 #####################################
+# configs for serial                #
+#####################################
+serial:
+  serial_id: "/dev/ttyACM0"
+
+
+
+
+#####################################
+# configs for camera calibration    #
+#####################################
+camera:
+  camera_id: ""
+  camera_param_path: "../CameraParam.yaml"
+  video_path: "/home/han/Documents/10.22/video/test.avi"
+  image_orientation: 0
+  if_record: 0
+
+#####################################
 # configs for detector              #
 #####################################
 detector:
@@ -19,17 +38,54 @@ detector:
     max_large_center_distance: 4.6
     max_angle: 40.0
     max_angle_diff: 20
-#   classifier_params:
-#     model_path: "../ArmorDetector/model/mlp.onnx"
-#     label_path: "../ArmorDetector/model/label.txt"
-#     threshold: 0.7
-#     ignore_classes:
-#       - negative
-# #      - outpost
-# #      - base
-# #      - guard
-# #      - "1"
-# #      - "2"
-# #      - "3"
-# #      - "4"
-# #      - "5"
+  classifier_params:
+    model_path: "../ArmorDetector/model/mlp.onnx"
+    label_path: "../ArmorDetector/model/label.txt"
+    threshold: 0.7
+    ignore_classes:
+      - negative
+#      - outpost
+#      - base
+#      - guard
+#      - "1"
+#      - "2"
+#      - "3"
+#      - "4"
+#      - "5"
+
+
+
+
+
+#####################################
+# configs for compensator module    #
+#####################################
+compensator:
+  gravity: 9.8
+  friction_coeff: 0.02
+  bullet_speed_bias: 0.0
+  channel_delay: 0.35 # s
+
+#####################################
+# configs for processor module      #
+#####################################
+processor:
+  tracker:
+    max_match_distance: 0.5 # meter
+    max_match_yaw_diff: 0.5 # rads
+    tracking_threshold: 10 # frames
+    lost_threshold: 25 # seconds
+
+# 过程噪声
+    s2_q_xyz: 0.05
+    s2_q_yaw: 5
+    s2_q_r: 80
+
+# 测量噪声
+    r_xyz_factor: 4e-4
+    r_yaw: 5e-3
+
+  solver:
+    calib_info_path: "../utils/CameraCalibration/params/"
+    camera_bias_z: 0  #以毫米为单位
+    camera_bias_y: 0

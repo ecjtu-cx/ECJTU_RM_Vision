@@ -1,6 +1,8 @@
 #ifndef ARMOR_H
 #define ARMOR_H
 
+#include "debug.h"
+
 #include <iostream>
 #include <opencv2/core.hpp>
 #include <opencv2/core/types.hpp>

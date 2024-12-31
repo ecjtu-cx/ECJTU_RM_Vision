@@ -22,7 +22,7 @@
 #include <vector>
 
 #include "general.h"
-
+#include "debug.h"
 #include "CRC_Check.h"
 
 using namespace std;

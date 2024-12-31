@@ -1,6 +1,8 @@
 #ifndef ANGLESOLVER_H
 #define ANGLESOLVER_H
 #include "armor.h"
+#include "debug.h"
+
 #include <Eigen/Core>
 #include <Eigen/Dense>
 #include <iostream>
