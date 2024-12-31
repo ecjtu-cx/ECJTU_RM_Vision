@@ -25,6 +25,7 @@ include_directories(
     ./include/AngleSolver
     ./include/SerialPort
     ./include/Thread
+    ./include/General
 )
 
 file(GLOB_RECURSE source
@@ -33,6 +34,7 @@ file(GLOB_RECURSE source
     ./src/ArmorDetector/*.*
     ./src/SerialPort/*.*
     ./src/Thread/*.*
+    ./src/General/*.*
 )
 
 add_executable(ECJTU_RM_Vision ./main.cpp ${source})

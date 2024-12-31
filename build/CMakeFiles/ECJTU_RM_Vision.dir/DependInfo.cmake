@@ -11,9 +11,10 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/chengxi/SrcCode/ECJTU_RM_Vision/main.cpp" "CMakeFiles/ECJTU_RM_Vision.dir/main.cpp.o" "gcc" "CMakeFiles/ECJTU_RM_Vision.dir/main.cpp.o.d"
   "/home/chengxi/SrcCode/ECJTU_RM_Vision/src/AngleSolver/anglesolver.cpp" "CMakeFiles/ECJTU_RM_Vision.dir/src/AngleSolver/anglesolver.cpp.o" "gcc" "CMakeFiles/ECJTU_RM_Vision.dir/src/AngleSolver/anglesolver.cpp.o.d"
   "/home/chengxi/SrcCode/ECJTU_RM_Vision/src/ArmorDetector/detector.cpp" "CMakeFiles/ECJTU_RM_Vision.dir/src/ArmorDetector/detector.cpp.o" "gcc" "CMakeFiles/ECJTU_RM_Vision.dir/src/ArmorDetector/detector.cpp.o.d"
+  "/home/chengxi/SrcCode/ECJTU_RM_Vision/src/General/general.cpp" "CMakeFiles/ECJTU_RM_Vision.dir/src/General/general.cpp.o" "gcc" "CMakeFiles/ECJTU_RM_Vision.dir/src/General/general.cpp.o.d"
   "/home/chengxi/SrcCode/ECJTU_RM_Vision/src/HKCamera/Camera.cpp" "CMakeFiles/ECJTU_RM_Vision.dir/src/HKCamera/Camera.cpp.o" "gcc" "CMakeFiles/ECJTU_RM_Vision.dir/src/HKCamera/Camera.cpp.o.d"
+  "/home/chengxi/SrcCode/ECJTU_RM_Vision/src/SerialPort/CRC_Check.cpp" "CMakeFiles/ECJTU_RM_Vision.dir/src/SerialPort/CRC_Check.cpp.o" "gcc" "CMakeFiles/ECJTU_RM_Vision.dir/src/SerialPort/CRC_Check.cpp.o.d"
   "/home/chengxi/SrcCode/ECJTU_RM_Vision/src/SerialPort/serialport.cpp" "CMakeFiles/ECJTU_RM_Vision.dir/src/SerialPort/serialport.cpp.o" "gcc" "CMakeFiles/ECJTU_RM_Vision.dir/src/SerialPort/serialport.cpp.o.d"
-  "/home/chengxi/SrcCode/ECJTU_RM_Vision/src/Thread/factor.cpp" "CMakeFiles/ECJTU_RM_Vision.dir/src/Thread/factor.cpp.o" "gcc" "CMakeFiles/ECJTU_RM_Vision.dir/src/Thread/factor.cpp.o.d"
   "/home/chengxi/SrcCode/ECJTU_RM_Vision/src/Thread/thread.cpp" "CMakeFiles/ECJTU_RM_Vision.dir/src/Thread/thread.cpp.o" "gcc" "CMakeFiles/ECJTU_RM_Vision.dir/src/Thread/thread.cpp.o.d"
   )
 

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DFMT_LOCALE -DFMT_SHARED
 
-CXX_INCLUDES = -I/usr/include/eigen3 -I/home/chengxi/SrcCode/ECJTU_RM_Vision/build -I/home/chengxi/SrcCode/ECJTU_RM_Vision -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./Config -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/HKCamera -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/ArmorDetector -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/AngleSolver -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/SerialPort -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/Thread -isystem /usr/local/include/opencv4
+CXX_INCLUDES = -I/usr/include/eigen3 -I/home/chengxi/SrcCode/ECJTU_RM_Vision/build -I/home/chengxi/SrcCode/ECJTU_RM_Vision -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./Config -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/HKCamera -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/ArmorDetector -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/AngleSolver -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/SerialPort -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/Thread -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/General -isystem /usr/local/include/opencv4
 
 CXX_FLAGS = -g
 

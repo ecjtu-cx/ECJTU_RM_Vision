@@ -201,6 +201,30 @@ src/ArmorDetector/detector.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/src/ArmorDetector/detector.cpp.s
 .PHONY : src/ArmorDetector/detector.cpp.s
 
+src/General/general.o: src/General/general.cpp.o
+.PHONY : src/General/general.o
+
+# target to build an object file
+src/General/general.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/src/General/general.cpp.o
+.PHONY : src/General/general.cpp.o
+
+src/General/general.i: src/General/general.cpp.i
+.PHONY : src/General/general.i
+
+# target to preprocess a source file
+src/General/general.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/src/General/general.cpp.i
+.PHONY : src/General/general.cpp.i
+
+src/General/general.s: src/General/general.cpp.s
+.PHONY : src/General/general.s
+
+# target to generate assembly for a file
+src/General/general.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/src/General/general.cpp.s
+.PHONY : src/General/general.cpp.s
+
 src/HKCamera/Camera.o: src/HKCamera/Camera.cpp.o
 .PHONY : src/HKCamera/Camera.o
 
@@ -225,6 +249,30 @@ src/HKCamera/Camera.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/src/HKCamera/Camera.cpp.s
 .PHONY : src/HKCamera/Camera.cpp.s
 
+src/SerialPort/CRC_Check.o: src/SerialPort/CRC_Check.cpp.o
+.PHONY : src/SerialPort/CRC_Check.o
+
+# target to build an object file
+src/SerialPort/CRC_Check.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/src/SerialPort/CRC_Check.cpp.o
+.PHONY : src/SerialPort/CRC_Check.cpp.o
+
+src/SerialPort/CRC_Check.i: src/SerialPort/CRC_Check.cpp.i
+.PHONY : src/SerialPort/CRC_Check.i
+
+# target to preprocess a source file
+src/SerialPort/CRC_Check.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/src/SerialPort/CRC_Check.cpp.i
+.PHONY : src/SerialPort/CRC_Check.cpp.i
+
+src/SerialPort/CRC_Check.s: src/SerialPort/CRC_Check.cpp.s
+.PHONY : src/SerialPort/CRC_Check.s
+
+# target to generate assembly for a file
+src/SerialPort/CRC_Check.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/src/SerialPort/CRC_Check.cpp.s
+.PHONY : src/SerialPort/CRC_Check.cpp.s
+
 src/SerialPort/serialport.o: src/SerialPort/serialport.cpp.o
 .PHONY : src/SerialPort/serialport.o
 
@@ -248,30 +296,6 @@ src/SerialPort/serialport.s: src/SerialPort/serialport.cpp.s
 src/SerialPort/serialport.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/src/SerialPort/serialport.cpp.s
 .PHONY : src/SerialPort/serialport.cpp.s
-
-src/Thread/factor.o: src/Thread/factor.cpp.o
-.PHONY : src/Thread/factor.o
-
-# target to build an object file
-src/Thread/factor.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/src/Thread/factor.cpp.o
-.PHONY : src/Thread/factor.cpp.o
-
-src/Thread/factor.i: src/Thread/factor.cpp.i
-.PHONY : src/Thread/factor.i
-
-# target to preprocess a source file
-src/Thread/factor.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/src/Thread/factor.cpp.i
-.PHONY : src/Thread/factor.cpp.i
-
-src/Thread/factor.s: src/Thread/factor.cpp.s
-.PHONY : src/Thread/factor.s
-
-# target to generate assembly for a file
-src/Thread/factor.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/src/Thread/factor.cpp.s
-.PHONY : src/Thread/factor.cpp.s
 
 src/Thread/thread.o: src/Thread/thread.cpp.o
 .PHONY : src/Thread/thread.o
@@ -315,15 +339,18 @@ help:
 	@echo "... src/ArmorDetector/detector.o"
 	@echo "... src/ArmorDetector/detector.i"
 	@echo "... src/ArmorDetector/detector.s"
+	@echo "... src/General/general.o"
+	@echo "... src/General/general.i"
+	@echo "... src/General/general.s"
 	@echo "... src/HKCamera/Camera.o"
 	@echo "... src/HKCamera/Camera.i"
 	@echo "... src/HKCamera/Camera.s"
+	@echo "... src/SerialPort/CRC_Check.o"
+	@echo "... src/SerialPort/CRC_Check.i"
+	@echo "... src/SerialPort/CRC_Check.s"
 	@echo "... src/SerialPort/serialport.o"
 	@echo "... src/SerialPort/serialport.i"
 	@echo "... src/SerialPort/serialport.s"
-	@echo "... src/Thread/factor.o"
-	@echo "... src/Thread/factor.i"
-	@echo "... src/Thread/factor.s"
 	@echo "... src/Thread/thread.o"
 	@echo "... src/Thread/thread.i"
 	@echo "... src/Thread/thread.s"
