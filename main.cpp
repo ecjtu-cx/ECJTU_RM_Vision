@@ -1,7 +1,6 @@
 #include "thread.h"
 
-int main()
-{
+int main() {
   // 工厂模板类
   Factory<TaskData> task_factory(3);
   Factory<VisionSendData> data_transmit_factory(5);
@@ -10,21 +9,23 @@ int main()
 
   char cwd[PATH_MAX];
   if (getcwd(cwd, sizeof(cwd)) == nullptr) {
-    fmt::print(fmt::fg(fmt::color::red), "fail to getcwd(Hkcam-SetParam)\n");
+    fmt::print(fmt::fg(fmt::color::red), "fail to getcwd(config.xml)\n");
     return 0;
   }
-  
-  string path = cwd + string("/Config/CameraParam.xml");
-  fmt::print(fmt::fg(fmt::color::green), "CameraParam path: {}\n", path);
+  string path = cwd + string("/Config/config.xml");
+  fmt::print(fmt::fg(fmt::color::green), "config.xml path: {}\n", path);
   thread_manager.InitManager(path.c_str());
   /*--------串口发送线程----------*/
-  thread transmitter(&ThreadManager::dataTransmitter, &thread_manager, std::ref(data_transmit_factory));
+  thread transmitter(&ThreadManager::dataTransmitter, &thread_manager,
+                     std::ref(data_transmit_factory));
   fmt::print(fmt::fg(fmt::color::blue), "Transmitter start !!!!!!!!!!\n");
   /*--------相机更新线程---------*/
-  thread task_producer(&ThreadManager::producer, &thread_manager, std::ref(task_factory));
+  thread task_producer(&ThreadManager::producer, &thread_manager,
+                       std::ref(task_factory));
   fmt::print(fmt::fg(fmt::color::blue), "Producer start !!!!!!!!!!\n");
   /*--------自瞄线程--------*/
-  thread task_consumer(&ThreadManager::consumer, &thread_manager, std::ref(task_factory), std::ref(data_transmit_factory));
+  thread task_consumer(&ThreadManager::consumer, &thread_manager,
+                       std::ref(task_factory), std::ref(data_transmit_factory));
   fmt::print(fmt::fg(fmt::color::blue), "Consumer start !!!!!!!!!!\n");
 
   transmitter.join();
@@ -32,4 +33,3 @@ int main()
   task_consumer.join();
   return 0;
 }
-

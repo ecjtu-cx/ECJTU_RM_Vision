@@ -11,6 +11,7 @@
 
 #include "armor.h"
 #include "serialport.h"
+#include "anglesolver.h"
 
 namespace rm_auto_aim {
 class Detector {
@@ -53,8 +54,7 @@ public:
   LightParams L_Param;                        // 灯条参数
   ArmorParams A_Param;                        // 装甲板参数
   DetectorState ArmorState = ARMOR_NOT_FOUND; // 装甲板状态
-  // TODO: 增加姿态解算类
-  // AngleSolver solver;
+  AngleSolver solver;                        // 角度解算器
 
   /*-------------函数区-----------------------*/
   // 总识别函数

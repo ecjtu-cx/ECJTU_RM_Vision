@@ -26,7 +26,7 @@ Detector::Detector(const std::string &config_file_path) {
   config["detector"]["armor_params"]["max_angle"] >> A_Param.max_angle;
   config["detector"]["armor_params"]["max_angle_diff"] >>
       A_Param.max_angle_diff;
-  //   // TODO: 增加数字识别以及姿态解算初始化
+  // TODO: 增加数字识别以及姿态解算初始化
   //   // 初始化分类器
   //   std::string model_path, label_path;
   //   std::vector<std::string> ignore_classes;
@@ -37,10 +37,15 @@ Detector::Detector(const std::string &config_file_path) {
   //   // this->classifier = std::make_unique<rm_auto_aim::NumberClassifier>(
   //   //     model_path, label_path, threshold);
   //   // 参数更改仍不方便，可换用XML或YAML形式读取参数方便调参
-  //   solver.Init(
-  //       "/home/realsteal/Auto_aim_HDUS/AngleSolver/XML/out_camera_data1.xml",
-  //       0, -137.2, -50, 9.8); // 相机坐标系到枪管坐标系下对应X,Y,Z轴偏移量
-  //       单位mm
+  char cwd[PATH_MAX];
+  if (getcwd(cwd, sizeof(cwd)) == nullptr) {
+    fmt::print(fmt::fg(fmt::color::red), "fail to getcwd(solver_data_xml)\n");
+    return;
+  }
+  string solver_param_path = cwd + string("/Config/out_camera_data1.xml");
+  solver.Init(solver_param_path.c_str(), 0, 0, 0,
+              9.8); // 相机坐标系到枪管坐标系下对应X,Y,Z轴偏移量 0, -137.2, -50,
+  //      单位mm
 }
 
 // 总识别函数
@@ -53,9 +58,8 @@ void Detector::run(Mat &img, int color_label, VisionSendData &data) {
   float pitch, yaw, dis, xyz[3];
   detect_for_target(img, color_label, TargetArmor); // 筛选目标装甲板
   if (ArmorState == ARMOR_FOUND) {
-    // TODO: 增加姿态解算
-    // solver.solve_angle(TargetArmor);
-    // solver.GetAngle(pitch, yaw, dis, xyz);
+    solver.solve_angle(TargetArmor);
+    solver.GetAngle(pitch, yaw, dis, xyz);
     if (fabs(pitch) > 2 || fabs(yaw) > 1.5 || fabs(dis) > 4) {
       data = {pitch, yaw, dis, 0, 1, 0, 0};
     } else {
