@@ -9,11 +9,11 @@ int main() {
 
   char cwd[PATH_MAX];
   if (getcwd(cwd, sizeof(cwd)) == nullptr) {
-    fmt::print(fmt::fg(fmt::color::red), "fail to getcwd(config.xml)\n");
+    fmt::print(fmt::fg(fmt::color::red), "fail to getcwd(config.yaml)\n");
     return 0;
   }
-  string path = cwd + string("/Config/config.xml");
-  fmt::print(fmt::fg(fmt::color::green), "config.xml path: {}\n", path);
+  string path = cwd + string("/Config/config.yaml");
+  fmt::print(fmt::fg(fmt::color::green), "config.yaml path: {}\n", path);
   thread_manager.InitManager(path.c_str());
   /*--------串口发送线程----------*/
   thread transmitter(&ThreadManager::dataTransmitter, &thread_manager,

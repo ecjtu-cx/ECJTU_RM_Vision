@@ -29,7 +29,6 @@ namespace rm_auto_aim
     config["detector"]["classifier_params"]["threshold"] >> threshold;
     // this->classifier = std::make_unique<rm_auto_aim::NumberClassifier>(
     //     model_path, label_path, threshold);
-    // 参数更改仍不方便，可换用XML或YAML形式读取参数方便调参
     solver.Init("/home/realsteal/Auto_aim_HDUS/AngleSolver/XML/out_camera_data1.xml",
                 0, -137.2, -50, 9.8); // 相机坐标系到枪管坐标系下对应X,Y,Z轴偏移量 单位mm
   }
