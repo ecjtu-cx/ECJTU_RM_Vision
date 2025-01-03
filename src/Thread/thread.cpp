@@ -1,4 +1,5 @@
 #include "thread.h"
+#include "debug.h"
 // 生产者
 
 void ThreadManager::InitManager(const std::string &config_file_path)
@@ -51,7 +52,7 @@ bool ThreadManager::consumer(Factory<TaskData> &factory, Factory<VisionSendData>
 
     /*-----------------------------------自瞄---------------------------------------------------*/
     double t1 = (double)cv::getTickCount();
-#ifdef DETEDRED
+#if DETEDRED
     autoAim->run(dst.img, rm_auto_aim::RED, data);
 #else
     autoAim->run(dst.img, rm_auto_aim::BLUE, data);

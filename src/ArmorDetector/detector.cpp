@@ -33,17 +33,16 @@ Detector::Detector(const std::string &config_file_path) {
   config["detector"]["classifier_params"]["threshold"] >> threshold;
   char cwd[PATH_MAX];
   if (getcwd(cwd, sizeof(cwd)) == nullptr) {
-    fmt::print(fmt::fg(fmt::color::red),
-               "fail to getcwd(out_camera_data1.xml)\n");
+    fmt::print(fmt::fg(fmt::color::red), "fail to getcwd(solver_data_xml)\n");
     return;
   }
-  std::string path = cwd + string("/Config/out_camera_data1.xml");
-  solver.Init(
-      path.c_str(), 0, 0, 0,
-      0); // 相机坐标系到枪管坐标系下对应X,Y,Z轴偏移量 单位mm0, -137.2, -50, 9.8
+  string solver_param_path = cwd + string("/Config/out_camera_data1.xml");
+  solver.Init(solver_param_path.c_str(), 0, 0, 0,
+              9.8); // 相机坐标系到枪管坐标系下对应X,Y,Z轴偏移量 0, -137.2, -50,
+  //      单位mm
 }
 void Detector::run(Mat &img, int color_label, VisionSendData &data) {
-#ifdef USING_ROI
+#if USING_ROI
   ImageByROI(img);
 #endif
   Mat ShowDebug = img.clone();
@@ -63,7 +62,7 @@ void Detector::run(Mat &img, int color_label, VisionSendData &data) {
     data = {0, 0, 0, 0, 0, 0, 0};
   }
 
-#ifdef UsingShowImg
+#if UsingShowImg
   drawResults(ShowDebug);
   imshow("binary_img", binary_img);
   imshow("Debug", ShowDebug);
