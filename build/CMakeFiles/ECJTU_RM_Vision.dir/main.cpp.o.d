@@ -367,7 +367,7 @@ CMakeFiles/ECJTU_RM_Vision.dir/main.cpp.o: \
  /usr/local/include/opencv4/opencv2/video/tracking.hpp \
  /usr/local/include/opencv4/opencv2/video/background_segm.hpp \
  /home/chengxi/SrcCode/ECJTU_RM_Vision/./include/AngleSolver/anglesolver.h \
- /home/chengxi/SrcCode/ECJTU_RM_Vision/./include/ArmorDetector/armor.h \
+ /home/chengxi/SrcCode/ECJTU_RM_Vision/armor.h \
  /home/chengxi/SrcCode/ECJTU_RM_Vision/./Config/debug.h \
  /usr/include/eigen3/Eigen/Core \
  /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
@@ -653,6 +653,7 @@ CMakeFiles/ECJTU_RM_Vision.dir/main.cpp.o: \
  /usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h \
  /home/chengxi/SrcCode/ECJTU_RM_Vision/./include/ArmorDetector/detector.h \
  /home/chengxi/SrcCode/ECJTU_RM_Vision/./include/ArmorDetector/armor.h \
+ /home/chengxi/SrcCode/ECJTU_RM_Vision/./include/ArmorDetector/number_classifier.h \
  /home/chengxi/SrcCode/ECJTU_RM_Vision/./include/SerialPort/serialport.h \
  /usr/include/dirent.h /usr/include/x86_64-linux-gnu/bits/dirent.h \
  /usr/include/x86_64-linux-gnu/bits/dirent_ext.h /usr/include/fcntl.h \

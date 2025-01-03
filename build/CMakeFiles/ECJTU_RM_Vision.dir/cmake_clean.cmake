@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ECJTU_RM_Vision.dir/src/AngleSolver/anglesolver.cpp.o.d"
   "CMakeFiles/ECJTU_RM_Vision.dir/src/ArmorDetector/detector.cpp.o"
   "CMakeFiles/ECJTU_RM_Vision.dir/src/ArmorDetector/detector.cpp.o.d"
+  "CMakeFiles/ECJTU_RM_Vision.dir/src/ArmorDetector/number_classifier.cpp.o"
+  "CMakeFiles/ECJTU_RM_Vision.dir/src/ArmorDetector/number_classifier.cpp.o.d"
   "CMakeFiles/ECJTU_RM_Vision.dir/src/General/general.cpp.o"
   "CMakeFiles/ECJTU_RM_Vision.dir/src/General/general.cpp.o.d"
   "CMakeFiles/ECJTU_RM_Vision.dir/src/HKCamera/Camera.cpp.o"

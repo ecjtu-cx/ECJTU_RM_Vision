@@ -201,6 +201,30 @@ src/ArmorDetector/detector.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/src/ArmorDetector/detector.cpp.s
 .PHONY : src/ArmorDetector/detector.cpp.s
 
+src/ArmorDetector/number_classifier.o: src/ArmorDetector/number_classifier.cpp.o
+.PHONY : src/ArmorDetector/number_classifier.o
+
+# target to build an object file
+src/ArmorDetector/number_classifier.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/src/ArmorDetector/number_classifier.cpp.o
+.PHONY : src/ArmorDetector/number_classifier.cpp.o
+
+src/ArmorDetector/number_classifier.i: src/ArmorDetector/number_classifier.cpp.i
+.PHONY : src/ArmorDetector/number_classifier.i
+
+# target to preprocess a source file
+src/ArmorDetector/number_classifier.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/src/ArmorDetector/number_classifier.cpp.i
+.PHONY : src/ArmorDetector/number_classifier.cpp.i
+
+src/ArmorDetector/number_classifier.s: src/ArmorDetector/number_classifier.cpp.s
+.PHONY : src/ArmorDetector/number_classifier.s
+
+# target to generate assembly for a file
+src/ArmorDetector/number_classifier.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECJTU_RM_Vision.dir/build.make CMakeFiles/ECJTU_RM_Vision.dir/src/ArmorDetector/number_classifier.cpp.s
+.PHONY : src/ArmorDetector/number_classifier.cpp.s
+
 src/General/general.o: src/General/general.cpp.o
 .PHONY : src/General/general.o
 
@@ -339,6 +363,9 @@ help:
 	@echo "... src/ArmorDetector/detector.o"
 	@echo "... src/ArmorDetector/detector.i"
 	@echo "... src/ArmorDetector/detector.s"
+	@echo "... src/ArmorDetector/number_classifier.o"
+	@echo "... src/ArmorDetector/number_classifier.i"
+	@echo "... src/ArmorDetector/number_classifier.s"
 	@echo "... src/General/general.o"
 	@echo "... src/General/general.i"
 	@echo "... src/General/general.s"

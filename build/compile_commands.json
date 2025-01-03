@@ -16,6 +16,11 @@
 },
 {
   "directory": "/home/chengxi/SrcCode/ECJTU_RM_Vision/build",
+  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -I/usr/include/eigen3 -I/home/chengxi/SrcCode/ECJTU_RM_Vision/build -I/home/chengxi/SrcCode/ECJTU_RM_Vision -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./Config -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/HKCamera -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/ArmorDetector -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/AngleSolver -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/SerialPort -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/Thread -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/General -isystem /usr/local/include/opencv4 -g -o CMakeFiles/ECJTU_RM_Vision.dir/src/ArmorDetector/number_classifier.cpp.o -c /home/chengxi/SrcCode/ECJTU_RM_Vision/src/ArmorDetector/number_classifier.cpp",
+  "file": "/home/chengxi/SrcCode/ECJTU_RM_Vision/src/ArmorDetector/number_classifier.cpp"
+},
+{
+  "directory": "/home/chengxi/SrcCode/ECJTU_RM_Vision/build",
   "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -I/usr/include/eigen3 -I/home/chengxi/SrcCode/ECJTU_RM_Vision/build -I/home/chengxi/SrcCode/ECJTU_RM_Vision -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./Config -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/HKCamera -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/ArmorDetector -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/AngleSolver -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/SerialPort -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/Thread -I/home/chengxi/SrcCode/ECJTU_RM_Vision/./include/General -isystem /usr/local/include/opencv4 -g -o CMakeFiles/ECJTU_RM_Vision.dir/src/General/general.cpp.o -c /home/chengxi/SrcCode/ECJTU_RM_Vision/src/General/general.cpp",
   "file": "/home/chengxi/SrcCode/ECJTU_RM_Vision/src/General/general.cpp"
 },

@@ -2,7 +2,7 @@ CMakeFiles/ECJTU_RM_Vision.dir/src/AngleSolver/anglesolver.cpp.o: \
  /home/chengxi/SrcCode/ECJTU_RM_Vision/src/AngleSolver/anglesolver.cpp \
  /usr/include/stdc-predef.h \
  /home/chengxi/SrcCode/ECJTU_RM_Vision/./include/AngleSolver/anglesolver.h \
- /home/chengxi/SrcCode/ECJTU_RM_Vision/./include/ArmorDetector/armor.h \
+ /home/chengxi/SrcCode/ECJTU_RM_Vision/armor.h \
  /home/chengxi/SrcCode/ECJTU_RM_Vision/./Config/debug.h \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
